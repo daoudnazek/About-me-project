@@ -5,7 +5,7 @@ var correctAnswerCounter = 0;
 var userName = prompt('please enter your name');
 alert('Hello ' + userName + ' , welcome to my website');
 alert('Please try to guess the following five questions by answering y/yes or n/no')
-
+function age(){
 var myAge = prompt('I am in my 30s, yes or no ?');
 
 if(myAge.toLowerCase() == 'yes' || myAge.toLowerCase() =='y'){
@@ -19,7 +19,9 @@ if(myAge.toLowerCase() == 'yes' || myAge.toLowerCase() =='y'){
     console.log('I am in my 30s, yes or no ?');
     console.log('yes that is correct');
 }// end if 1
-
+}
+age();
+function degree(){
 var myStudies = prompt('Am I an engineer?');
 
 if(myStudies.toLowerCase() == 'yes' || myStudies.toLowerCase() == 'y'){
@@ -33,8 +35,11 @@ if(myStudies.toLowerCase() == 'yes' || myStudies.toLowerCase() == 'y'){
     console.log('Am I an engineer?');
     console.log('you answered No, but I am an engineer');
 }// end if 2
+}
+degree();
 
-var mylastWork = prompt('Did I work in e-commerce bussines?');
+function work(){
+ var mylastWork = prompt('Did I work in e-commerce bussines?');
 
 if(mylastWork.toLowerCase() == 'yes' || mylastWork.toLowerCase() == 'y'){
     alert('yes, that is correct :)')
@@ -47,7 +52,10 @@ if(mylastWork.toLowerCase() == 'yes' || mylastWork.toLowerCase() == 'y'){
     console.log('Did I work in e-commerce bussines?')
     console.log('you answered No, but I did');
 }// end if 3
+}
+work();
 
+function hobby(){
 var myOtherlastWork = prompt('Do I know about photographing?');
 
 if(myOtherlastWork.toLowerCase() == 'yes' || myOtherlastWork.toLowerCase() == 'y'){
@@ -61,7 +69,9 @@ if(myOtherlastWork.toLowerCase() == 'yes' || myOtherlastWork.toLowerCase() == 'y
     console.log('Do I know about photographing?')
     console.log('you answered No, but I do');
 }// end if 4
-
+}
+hobby();
+function prog(){
 var programmingStartingYear = prompt('Did I start studying programming in 2019?');
 
 if(programmingStartingYear.toLowerCase() == 'yes' || programmingStartingYear.toLowerCase() == 'y'){
@@ -75,7 +85,10 @@ if(programmingStartingYear.toLowerCase() == 'yes' || programmingStartingYear.toL
     console.log('Did I start studying programming in 2019?');
     console.log('you answered no and that is correct')
 }// end if 5
+}
+prog();
 
+function guess(){
 for (var i =0; i<4 ; i++){
     var guessNumber = prompt('would you guess the correct number? you have four attempts');
 if (guessNumber > 7){
@@ -89,25 +102,21 @@ if (guessNumber > 7){
 }// end for 
 console.log('The right number is 7');
 alert('The right number is 7');
-
-
-var x = 0;
-var foodArray = ['pizza', 'burger', ' pasta', 'mlukieh '];
-var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts');
- while ( x < 5 && foodChoice != foodArray[0] && foodChoice != foodArray[1] && foodChoice != foodArray[2] && foodChoice != foodArray[3]) {
-    foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts');
-    x++
 }
+guess();
 
-if (x<5){
-    alert('That is correct, nice guessing');
-    correctAnswerCounter++ ;
-    alert('Here is the list of my favourite food ' + foodArray)
-}else {
-    alert('You run out of attempets and here is the list of my favourite food'+ foodArray)
-}
-
-alert('Thank you ' + userName + ' ,you have tried your best');
-alert('The number of your correct answers is : ' + correctAnswerCounter);
-console.log('The number of your correct answers is : ' + correctAnswerCounter);
+function food(){
+    var x = 0;
+    var foodArray = ['pizza', 'burger', ' pasta', 'mlukieh '];
+    var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts');
+     if (x<5){
+    }else {
+        alert('You run out of attempets and here is the list of my favourite food'+ foodArray)
+    }
+    }
+    food();
+    
+    
+    alert('Thank you ' + userName + ' ,you have tried your best');
+    alert('The number of your correct answers is : ' + correctAnswerCounter);
 
