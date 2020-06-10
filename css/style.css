@@ -1,0 +1,17 @@
+p {
+  
+  width: 500px;
+  border-style: double;
+  border-color: yellow;
+  border-width: 10px;
+  padding: 40px;
+  margin: 30px;
+  background-color: teal;
+  color: white;
+  font-size: large;
+}
+
+h1{
+    color: teal;
+}
+
