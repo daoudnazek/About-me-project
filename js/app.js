@@ -105,7 +105,7 @@ alert('The right number is 7');
 }
 guess();
 
-function food(){
+function foood(){
     var x = 0;
     var foodArray = ['pizza', 'burger', ' pasta', 'mlukieh '];
     var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts');
@@ -114,7 +114,7 @@ function food(){
         alert('You run out of attempets and here is the list of my favourite food'+ foodArray)
     }
     }
-    food();
+    foood();
     
     
     alert('Thank you ' + userName + ' ,you have tried your best');
