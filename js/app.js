@@ -108,10 +108,18 @@ guess();
 function food(){
     var x = 0;
     var foodArray = ['pizza', 'burger', ' pasta', 'mlukieh '];
-    var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts');
-     if (x<5){
+    var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts').toLowerCase();
+    while (foodChoice != 'pizza' && foodChoice != 'burger' && foodChoice != 'pasta' && foodChoice != 'mlukieh' && x < 5){
+        var foodChoice = prompt('Can you guess one of my favourite food? , you have six attempts').toLowerCase();
+        x++;
+    }
+    
+    
+    if (x<5){
+        alert('That is correct :) my list of favourite is : ' + foodArray)
+        correctAnswerCounter++ ;
     }else {
-        alert('You run out of attempets and here is the list of my favourite food'+ foodArray)
+        alert('You run out of attempets and here is the list of my favourite food : '+ foodArray)
     }
     }
     food();
