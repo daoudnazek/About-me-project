@@ -9,9 +9,14 @@ p {
   background-color: teal;
   color: white;
   font-size: large;
+  font-style: normal;
+
 }
 
 h1{
     color: teal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+
 }
 
