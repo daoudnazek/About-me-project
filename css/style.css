@@ -20,3 +20,12 @@ h1{
 
 }
 
+h3 {
+  color: teal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+
+li {
+  color: darkgray;
+}
